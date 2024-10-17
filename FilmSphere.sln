@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmSphere.DAL", "FilmSphere.DAL\FilmSphere.DAL.csproj", "{0D965149-545C-4F75-BAB9-EA7E1F5D4934}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmSphere.BLL", "FilmSphere.BLL\FilmSphere.BLL.csproj", "{67148698-7154-46BF-ACAE-06705C9FF836}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmSphere.Core", "FilmSphere.Core\FilmSphere.Core.csproj", "{7EE2F019-A5E2-45A6-9E76-2B21C894A7A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FilmSphere.API", "FilmSphere.API\FilmSphere.API.csproj", "{F6C5B590-6CB0-4361-9B5B-1CFC1937E1D2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0D965149-545C-4F75-BAB9-EA7E1F5D4934}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D965149-545C-4F75-BAB9-EA7E1F5D4934}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D965149-545C-4F75-BAB9-EA7E1F5D4934}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D965149-545C-4F75-BAB9-EA7E1F5D4934}.Release|Any CPU.Build.0 = Release|Any CPU
+		{67148698-7154-46BF-ACAE-06705C9FF836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{67148698-7154-46BF-ACAE-06705C9FF836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{67148698-7154-46BF-ACAE-06705C9FF836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{67148698-7154-46BF-ACAE-06705C9FF836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EE2F019-A5E2-45A6-9E76-2B21C894A7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EE2F019-A5E2-45A6-9E76-2B21C894A7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EE2F019-A5E2-45A6-9E76-2B21C894A7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EE2F019-A5E2-45A6-9E76-2B21C894A7A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C5B590-6CB0-4361-9B5B-1CFC1937E1D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C5B590-6CB0-4361-9B5B-1CFC1937E1D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C5B590-6CB0-4361-9B5B-1CFC1937E1D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C5B590-6CB0-4361-9B5B-1CFC1937E1D2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

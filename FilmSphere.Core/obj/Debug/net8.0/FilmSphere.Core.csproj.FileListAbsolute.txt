@@ -1,0 +1,11 @@
+C:\FilmSphere.API\FilmSphere.Core\bin\Debug\net8.0\FilmSphere.Core.deps.json
+C:\FilmSphere.API\FilmSphere.Core\bin\Debug\net8.0\FilmSphere.Core.dll
+C:\FilmSphere.API\FilmSphere.Core\bin\Debug\net8.0\FilmSphere.Core.pdb
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\FilmSphere.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\FilmSphere.Core.AssemblyInfoInputs.cache
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\FilmSphere.Core.AssemblyInfo.cs
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\FilmSphere.Core.csproj.CoreCompileInputs.cache
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\FilmSphere.Core.dll
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\refint\FilmSphere.Core.dll
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\FilmSphere.Core.pdb
+C:\FilmSphere.API\FilmSphere.Core\obj\Debug\net8.0\ref\FilmSphere.Core.dll

@@ -1,0 +1,17 @@
+C:\FilmSphere.API\FilmSphere.BLL\bin\Debug\net8.0\FilmSphere.BLL.deps.json
+C:\FilmSphere.API\FilmSphere.BLL\bin\Debug\net8.0\FilmSphere.BLL.dll
+C:\FilmSphere.API\FilmSphere.BLL\bin\Debug\net8.0\FilmSphere.BLL.pdb
+C:\FilmSphere.API\FilmSphere.BLL\bin\Debug\net8.0\FilmSphere.Core.dll
+C:\FilmSphere.API\FilmSphere.BLL\bin\Debug\net8.0\FilmSphere.DAL.dll
+C:\FilmSphere.API\FilmSphere.BLL\bin\Debug\net8.0\FilmSphere.DAL.pdb
+C:\FilmSphere.API\FilmSphere.BLL\bin\Debug\net8.0\FilmSphere.Core.pdb
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.csproj.AssemblyReference.cache
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.GeneratedMSBuildEditorConfig.editorconfig
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.AssemblyInfoInputs.cache
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.AssemblyInfo.cs
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.csproj.CoreCompileInputs.cache
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.csproj.CopyComplete
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.dll
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\refint\FilmSphere.BLL.dll
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.pdb
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\ref\FilmSphere.BLL.dll
