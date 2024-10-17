@@ -1,4 +1,5 @@
 using FilmSphere.BLL.Interfaces.User;
+using FilmSphere.BLL.Mappings;
 using FilmSphere.BLL.Services.User;
 using FilmSphere.DAL.Context;
 using FilmSphere.DAL.Interfaces.User;
@@ -18,7 +19,7 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
-
+builder.Services.AddAutoMapper(typeof(MappingProfile));
 
 
 

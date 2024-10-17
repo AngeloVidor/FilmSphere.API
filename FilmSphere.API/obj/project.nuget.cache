@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5y3g6RAElyNL1ppiNUEfCaAqN+V9btJTH3c7icr7Ae2yROz9wQ5croT9papVspuaBrzbO6lK3ToNsR785wi44A==",
+  "dgSpecHash": "PubTPH9IYEZMTt4UCyCuRmXWYsAz9hzJ27oBjm5uHw10B5yRDKQzAoQbGLS/DmiQlBPWzowq2rd/LdPV38wh7g==",
   "success": true,
   "projectFilePath": "C:\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using FilmSphere.BLL.DTOs.User;
 using FilmSphere.BLL.Interfaces.User;
 using FilmSphere.Core.Entities.User;
@@ -12,10 +13,12 @@ namespace FilmSphere.BLL.Services.User
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly IMapper _mapper;
 
-        public UserService(IUserRepository userRepository)
+        public UserService(IUserRepository userRepository, IMapper mapper)
         {
             _userRepository = userRepository;
+            _mapper = mapper;
         }
 
         public async Task<UserDTO> GetUserByEmail(string email)
@@ -26,13 +29,8 @@ namespace FilmSphere.BLL.Services.User
             {
                 throw new Exception($"No user found with email: {email}");
             }
-            return new UserDTO
-            {
-                UserId = userEntity.UserId,
-                Username = userEntity.Username,
-                Email = userEntity.Email,
-                Password = userEntity.Password
-            };
+
+            return _mapper.Map<UserDTO>(userEntity);
         }
 
         public async Task<UserDTO> RegisterUserAsync(UserDTO userDto)
@@ -42,24 +40,13 @@ namespace FilmSphere.BLL.Services.User
                 throw new ArgumentException("Username and Email cannot be null or empty.");
             }
 
-            var userEntity = new UserEntity
-            {
-                Username = userDto.Username,
-                Email = userDto.Email,
-                Password = userDto.Password
-            };
+            var userEntity = _mapper.Map<UserEntity>(userDto);
 
             try
             {
                 var createdUser = await _userRepository.RegisterUserAsync(userEntity);
 
-                return new UserDTO
-                {
-                    UserId = createdUser.UserId,
-                    Username = createdUser.Username,
-                    Email = createdUser.Email,
-                    Password = createdUser.Password
-                };
+                return _mapper.Map<UserDTO>(createdUser);
             }
             catch (Exception ex)
             {

@@ -15,3 +15,4 @@ C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.dll
 C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\refint\FilmSphere.BLL.dll
 C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.pdb
 C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\ref\FilmSphere.BLL.dll
+C:\FilmSphere.API\FilmSphere.BLL\obj\Debug\net8.0\FilmSphere.BLL.sourcelink.json

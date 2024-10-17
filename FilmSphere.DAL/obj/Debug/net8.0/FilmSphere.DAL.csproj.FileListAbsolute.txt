@@ -15,3 +15,4 @@ C:\FilmSphere.API\FilmSphere.DAL\obj\Debug\net8.0\refint\FilmSphere.DAL.dll
 C:\FilmSphere.API\FilmSphere.DAL\obj\Debug\net8.0\FilmSphere.DAL.pdb
 C:\FilmSphere.API\FilmSphere.DAL\obj\Debug\net8.0\FilmSphere.DAL.genruntimeconfig.cache
 C:\FilmSphere.API\FilmSphere.DAL\obj\Debug\net8.0\ref\FilmSphere.DAL.dll
+C:\FilmSphere.API\FilmSphere.DAL\obj\Debug\net8.0\FilmSphere.DAL.sourcelink.json

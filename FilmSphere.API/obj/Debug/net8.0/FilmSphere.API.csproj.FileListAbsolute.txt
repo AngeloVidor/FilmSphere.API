@@ -147,3 +147,5 @@ C:\FilmSphere.API\FilmSphere.API\obj\Debug\net8.0\refint\FilmSphere.API.dll
 C:\FilmSphere.API\FilmSphere.API\obj\Debug\net8.0\FilmSphere.API.pdb
 C:\FilmSphere.API\FilmSphere.API\obj\Debug\net8.0\FilmSphere.API.genruntimeconfig.cache
 C:\FilmSphere.API\FilmSphere.API\obj\Debug\net8.0\ref\FilmSphere.API.dll
+C:\FilmSphere.API\FilmSphere.API\bin\Debug\net8.0\AutoMapper.dll
+C:\FilmSphere.API\FilmSphere.API\obj\Debug\net8.0\FilmSphere.API.sourcelink.json

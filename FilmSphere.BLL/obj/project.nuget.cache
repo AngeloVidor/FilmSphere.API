@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "6Xrif1+oGixNb+bOU2te6l0NWbp4mlM4e7I9iSXWpjOArcpncXdQIt6DngVbEWQYX9NIL3+aOQHCUbMPvnl1mw==",
+  "dgSpecHash": "jM2pkiSPMgxAFvhcDqwzINKZhJMNs31KSWObFBpBFP68L3jQLxlsJN32TXyVvPFagJdFU6jbnX8V/yBmbHnYcw==",
   "success": true,
   "projectFilePath": "C:\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\angel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
