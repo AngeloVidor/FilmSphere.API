@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "A7d2GRpLlzlFAyxz9PY/SLlxfDEN1phd4EMtTjR0RI7x7jjS7zOP5qtY2wwLMJOwfSp7HO0C4NE8p7jjYdgdhw==",
+  "dgSpecHash": "3d2Oh77LafmSzdnpCiIzSQJRFz2KUPmNTeQMGGzw/+PVefjHalRm9ZMVpqQpavpdk/ctRjgXhBl1Lzo/ovk6vw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj",
+  "projectFilePath": "C:\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

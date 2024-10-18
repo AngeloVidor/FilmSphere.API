@@ -58,9 +58,9 @@ namespace FilmSphere.API.Controllers.User
                 return BadRequest(ModelState);
             }
 
-            var userEntity = await _authService.ValidateUser(
-                new UserDTO { Email = loginDto.Email, Password = loginDto.Password }
-            );
+            var dto = _mapper.Map<UserDTO>(loginDto);
+
+            var userEntity = await _authService.ValidateUser(dto);
 
             if (userEntity == null)
             {

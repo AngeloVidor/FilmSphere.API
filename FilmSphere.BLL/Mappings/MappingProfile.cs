@@ -13,8 +13,11 @@ namespace FilmSphere.BLL.Mappings
         public MappingProfile()
         {
             CreateMap<UserEntity, UserDTO>().ForMember(dest => dest.Password, opt => opt.Ignore());
-
+            CreateMap<RegisterDTO, UserDTO>();
             CreateMap<UserDTO, UserEntity>();
+
+            CreateMap<UserDTO, LoginDTO>();
+            CreateMap<LoginDTO, UserDTO>();
         }
     }
 }
