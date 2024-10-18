@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gHchuLD72WeDMW92Q1+k/P2jSF1Aal3+ih+njfiomg6GXyBvIYk/4WJ1VAd4tR701sgyB5gFqjJMjF0XebIC+g==",
+  "dgSpecHash": "c46eC9L24FzeLxB4e7xkMpJWf6OIJWDy+J79QcxIIQnItsRVmwVuNUbonkph+vKjBDVL46YnLQybcolrv7kC/w==",
   "success": true,
-  "projectFilePath": "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

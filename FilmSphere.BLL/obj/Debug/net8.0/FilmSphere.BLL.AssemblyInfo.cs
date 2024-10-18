@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmSphere.BLL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+49fe4cdb1ed80058759c7a2c654dc8b8bc5810af")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+125ff931523f305c10b9d37d807909e8b0d4121a")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmSphere.BLL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FilmSphere.BLL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
