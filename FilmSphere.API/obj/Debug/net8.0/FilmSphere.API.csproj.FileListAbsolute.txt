@@ -301,3 +301,4 @@ C:\Users\angel\Desktop\FilmSphere.API\FilmSPhere.API\obj\Debug\net8.0\refint\Fil
 C:\Users\angel\Desktop\FilmSphere.API\FilmSPhere.API\obj\Debug\net8.0\FilmSphere.API.pdb
 C:\Users\angel\Desktop\FilmSphere.API\FilmSphere.API\obj\Debug\net8.0\FilmSphere.API.genruntimeconfig.cache
 C:\Users\angel\Desktop\FilmSphere.API\FilmSphere.API\obj\Debug\net8.0\ref\FilmSphere.API.dll
+C:\FilmSphere.API\FilmSphere.API\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

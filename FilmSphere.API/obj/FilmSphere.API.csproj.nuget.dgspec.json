@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSPhere.API\\FilmSphere.API.csproj": {}
+    "C:\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSPhere.API\\FilmSphere.API.csproj": {
+    "C:\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSPhere.API\\FilmSphere.API.csproj",
+        "projectUniqueName": "C:\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj",
         "projectName": "FilmSphere.API",
-        "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSPhere.API\\FilmSphere.API.csproj",
+        "projectPath": "C:\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSPhere.API\\obj\\",
+        "outputPath": "C:\\FilmSphere.API\\FilmSphere.API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj"
+              "C:\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj": {
+                "projectPath": "C:\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj"
               }
             }
           }
@@ -94,14 +94,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj": {
+    "C:\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj",
+        "projectUniqueName": "C:\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj",
         "projectName": "FilmSphere.BLL",
-        "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj",
+        "projectPath": "C:\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.BLL\\obj\\",
+        "outputPath": "C:\\FilmSphere.API\\FilmSphere.BLL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -116,11 +116,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj"
+              "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj": {
+                "projectPath": "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj"
               },
-              "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj"
+              "C:\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj": {
+                "projectPath": "C:\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj"
               }
             }
           }
@@ -164,14 +164,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj": {
+    "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
+        "projectUniqueName": "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
         "projectName": "FilmSphere.Core",
-        "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
+        "projectPath": "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\obj\\",
+        "outputPath": "C:\\FilmSphere.API\\FilmSphere.Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -217,14 +217,14 @@
         }
       }
     },
-    "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj": {
+    "C:\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj",
+        "projectUniqueName": "C:\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj",
         "projectName": "FilmSphere.DAL",
-        "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj",
+        "projectPath": "C:\\FilmSphere.API\\FilmSphere.DAL\\FilmSphere.DAL.csproj",
         "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.DAL\\obj\\",
+        "outputPath": "C:\\FilmSphere.API\\FilmSphere.DAL\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -239,8 +239,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj": {
-                "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj"
+              "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj": {
+                "projectPath": "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj"
               }
             }
           }

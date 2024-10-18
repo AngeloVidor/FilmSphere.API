@@ -1,4 +1,5 @@
 using System.Threading.Tasks;
+using AutoMapper;
 using FilmSphere.BLL.DTOs.User;
 using FilmSphere.BLL.Interfaces;
 using FilmSphere.BLL.Interfaces.User;
@@ -13,11 +14,13 @@ namespace FilmSphere.API.Controllers.User
     {
         private readonly IUserService _userService;
         private readonly IAuthService _authService;
+        private readonly IMapper _mapper;
 
-        public UserController(IUserService userService, IAuthService authService)
+        public UserController(IUserService userService, IAuthService authService, IMapper mapper)
         {
             _userService = userService;
             _authService = authService;
+            _mapper = mapper;
         }
 
         [HttpPost("register")]
@@ -30,18 +33,15 @@ namespace FilmSphere.API.Controllers.User
 
             try
             {
-                var createdUser = await _userService.RegisterUserAsync(
-                    new UserDTO
-                    {
-                        Username = registerDto.Username,
-                        Email = registerDto.Email,
-                        Password = registerDto.Password
-                    }
-                );
+                var userDto = _mapper.Map<UserDTO>(registerDto);
+                var createdUser = await _userService.RegisterUserAsync(userDto);
+
+                var userResponse = _mapper.Map<UserDTO>(createdUser);
+
                 return CreatedAtAction(
                     nameof(GetUserByEmail),
                     new { email = createdUser.Email },
-                    createdUser
+                    userResponse
                 );
             }
             catch (Exception ex)
@@ -58,21 +58,20 @@ namespace FilmSphere.API.Controllers.User
                 return BadRequest(ModelState);
             }
 
-            var user = await _authService.ValidateUser(
-                new UserDTO
-                {
-                    Email = loginDto.Email,
-                    Password = loginDto.Password 
-                }
+            var userEntity = await _authService.ValidateUser(
+                new UserDTO { Email = loginDto.Email, Password = loginDto.Password }
             );
 
-            if (user == null)
+            if (userEntity == null)
             {
                 return Unauthorized(new { Message = "Invalid credentials" });
             }
 
-            var token = await _authService.GenerateToken(user);
-            return Ok(new { Token = token });
+            var userDto = _mapper.Map<UserDTO>(userEntity);
+
+            var token = await _authService.GenerateToken(userEntity);
+
+            return Ok(new { User = userDto, Token = token });
         }
 
         [HttpGet("getByEmail/{email}")]
