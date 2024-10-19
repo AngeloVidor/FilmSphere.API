@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmSphere.Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+415d889a1c07f98e21bf9dbb5ca8839038b8e38e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6ca593485215f25e1507ae6eb09a95139b9e4a78")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmSphere.Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FilmSphere.Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -11,5 +11,6 @@ namespace FilmSphere.BLL.Interfaces.User
     {
         Task<UserDTO> RegisterUserAsync(UserDTO user);
         Task<UserDTO> GetUserByEmail(string email);
+        Task ValidateEmailAsync(string email);
     }
 }

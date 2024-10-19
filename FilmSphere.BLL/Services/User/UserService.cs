@@ -40,6 +40,8 @@ namespace FilmSphere.BLL.Services.User
                 throw new ArgumentException("Username and Email cannot be null or empty.");
             }
 
+            await ValidateEmailAsync(userDto.Email);
+
             var userEntity = _mapper.Map<UserEntity>(userDto);
 
             try
@@ -51,6 +53,15 @@ namespace FilmSphere.BLL.Services.User
             catch (Exception ex)
             {
                 throw new Exception("An error occurred while registering the user.", ex);
+            }
+        }
+
+        public async Task ValidateEmailAsync(string email)
+        {
+            var userEmail = await _userRepository.GetUserByEmail(email);
+            if (userEmail != null)
+            {
+                throw new ArgumentException("Email already in use");
             }
         }
     }
