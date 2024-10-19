@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qG6Ot0bgUPk9fFHNpF33o933ktRqDNP5/LP50BQGaahkXyHRap6aSgomvPsaTjGk12ZVv6Fy6zalLtn+UP6uFg==",
+  "dgSpecHash": "G+DLj5tz2GpC7L5vFX/lqlPWkgYF3OuVGdN07BAjths249QNpwYQWbgvt/gRnipvd964AK4dkVJA3Grok088Bg==",
   "success": true,
-  "projectFilePath": "C:\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

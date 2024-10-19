@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
+using FilmSphere.BLL.DTOs.Movie;
 using FilmSphere.BLL.DTOs.User;
+using FilmSphere.Core.Entities.Movie;
 using FilmSphere.Core.Entities.User;
 
 namespace FilmSphere.BLL.Mappings
@@ -18,6 +20,9 @@ namespace FilmSphere.BLL.Mappings
 
             CreateMap<UserDTO, LoginDTO>();
             CreateMap<LoginDTO, UserDTO>();
+
+            CreateMap<MovieEntity, MovieDTO>();
+            CreateMap<MovieDTO, MovieEntity>();
         }
     }
 }

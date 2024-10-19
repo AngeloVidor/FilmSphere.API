@@ -21,6 +21,32 @@ namespace FilmSphere.DAL.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("FilmSphere.Core.Entities.Movie.MovieEntity", b =>
+                {
+                    b.Property<int>("MovieId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("MovieId"));
+
+                    b.Property<string>("MovieDescription")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("MovieName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("MovieId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Movie");
+                });
+
             modelBuilder.Entity("FilmSphere.Core.Entities.User.UserEntity", b =>
                 {
                     b.Property<int>("UserId")
@@ -44,6 +70,22 @@ namespace FilmSphere.DAL.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("FilmSphere.Core.Entities.Movie.MovieEntity", b =>
+                {
+                    b.HasOne("FilmSphere.Core.Entities.User.UserEntity", "User")
+                        .WithMany("UserMovies")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("FilmSphere.Core.Entities.User.UserEntity", b =>
+                {
+                    b.Navigation("UserMovies");
                 });
 #pragma warning restore 612, 618
         }

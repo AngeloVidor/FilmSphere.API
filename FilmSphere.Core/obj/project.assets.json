@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
+      "projectUniqueName": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
       "projectName": "FilmSphere.Core",
-      "projectPath": "C:\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
+      "projectPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\FilmSphere.Core.csproj",
       "packagesPath": "C:\\Users\\angel\\.nuget\\packages\\",
-      "outputPath": "C:\\FilmSphere.API\\FilmSphere.Core\\obj\\",
+      "outputPath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\angel\\AppData\\Roaming\\NuGet\\NuGet.Config"

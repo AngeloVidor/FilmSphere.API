@@ -1,11 +1,15 @@
 using System.Text;
+using FilmSphere.BLL.Interfaces.Movie;
 using FilmSphere.BLL.Interfaces.User;
 using FilmSphere.BLL.Interfaces.User.Auth;
 using FilmSphere.BLL.Mappings;
+using FilmSphere.BLL.Services.Movie;
 using FilmSphere.BLL.Services.User;
 using FilmSphere.BLL.Services.User.Auth;
 using FilmSphere.DAL.Context;
+using FilmSphere.DAL.Interfaces.Movie;
 using FilmSphere.DAL.Interfaces.User;
+using FilmSphere.DAL.Repositories.Movie;
 using FilmSphere.DAL.Repositories.User;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
@@ -26,6 +30,8 @@ builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IAuthService, AuthService>();
+builder.Services.AddScoped<IMovieService, MovieService>();
+builder.Services.AddScoped<IMovieRepository, MovieRepository>();
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 builder
@@ -61,7 +67,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
-app.UseAuthentication(); 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
