@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using FilmSphere.BLL.DTOs.Movie;
+using FilmSphere.BLL.DTOs.Movie.Cast;
 using FilmSphere.BLL.Interfaces.Movie;
 using FilmSphere.Core.Entities.Movie;
 using FilmSphere.DAL.Interfaces.Movie;
@@ -19,6 +20,25 @@ namespace FilmSphere.BLL.Services.Movie
         {
             _movieRepository = movieRepository;
             _mapper = mapper;
+        }
+
+        public async Task<CastDTO> AddCastToMovieAsync(CastDTO cast)
+        {
+            var movie = await _movieRepository.GetMovieById(cast.MovieId);
+            if (movie == null)
+            {
+                throw new ArgumentException($"Movie with ID: {cast.MovieId} not found");
+            }
+            if (cast == null)
+            {
+                throw new ArgumentException("Cast cannot be null");
+            }
+            var castEntity = _mapper.Map<CastEntity>(cast);
+
+            var addedCast = await _movieRepository.AddCastToMovieAsync(castEntity);
+
+            var castDtoResponse = _mapper.Map<CastDTO>(addedCast);
+            return castDtoResponse;
         }
 
         public async Task<MovieDTO> AddMovieAsync(MovieDTO movie)

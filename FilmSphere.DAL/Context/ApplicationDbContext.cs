@@ -15,6 +15,6 @@ namespace FilmSphere.DAL.Context
 
         public DbSet<UserEntity> Users { get; set; }
         public DbSet<MovieEntity> Movie { get; set; }
-
+        public DbSet<CastEntity> Cast { get; set; }
     }
 }

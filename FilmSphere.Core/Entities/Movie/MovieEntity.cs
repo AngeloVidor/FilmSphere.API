@@ -19,6 +19,8 @@ namespace FilmSphere.Core.Entities.Movie
         public string TrailerUrl { get; set; }
         public string Description { get; set; }
 
+        public ICollection<CastEntity> Cast { get; set; }
+
         public int UserId { get; set; }
         public UserEntity User { get; set; }
     }

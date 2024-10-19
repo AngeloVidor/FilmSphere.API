@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using FilmSphere.BLL.DTOs.Movie;
+using FilmSphere.BLL.DTOs.Movie.Cast;
 using FilmSphere.BLL.Interfaces.Movie;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,7 +23,7 @@ namespace FilmSphere.API.Controllers.Movie
             _movie = movie;
         }
 
-        [HttpPost]
+        [HttpPost("add-movie")]
         public async Task<IActionResult> AddMovie([FromBody] MovieDTO movie)
         {
             if (!ModelState.IsValid)
@@ -60,6 +61,40 @@ namespace FilmSphere.API.Controllers.Movie
             catch (Exception ex)
             {
                 return StatusCode(500, $"Error fetching the movie: {ex.Message}");
+            }
+        }
+
+        [HttpPost("add-cast")]
+        public async Task<IActionResult> AddCastToMovie(CastDTO cast)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            try
+            {
+                var addedCast = await _movie.AddCastToMovieAsync(cast);
+                return CreatedAtAction(
+                    nameof(AddCastToMovie),
+                    new { castId = addedCast.CastId },
+                    addedCast
+                );
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(new { message = ex.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(
+                    500,
+                    new
+                    {
+                        message = "An error occurred while processing your request",
+                        error = ex.Message
+                    }
+                );
             }
         }
     }

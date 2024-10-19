@@ -17,6 +17,13 @@ namespace FilmSphere.DAL.Repositories.Movie
             _context = context;
         }
 
+        public async Task<CastEntity> AddCastToMovieAsync(CastEntity cast)
+        {
+            await _context.Cast.AddAsync(cast);
+            await _context.SaveChangesAsync();
+            return cast;
+        }
+
         public async Task<MovieEntity> AddMovieAsync(MovieEntity movie)
         {
             await _context.Movie.AddAsync(movie);
