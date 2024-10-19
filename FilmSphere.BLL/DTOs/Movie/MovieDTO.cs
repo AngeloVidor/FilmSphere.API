@@ -8,12 +8,14 @@ namespace FilmSphere.BLL.DTOs.Movie
     public class MovieDTO
     {
         public int MovieId { get; set; }
-        public string MovieName { get; set; }
-        public string MovieDescription { get; set; }
-        public int UserId { get; set; }
+        public string OriginalTitle { get; set; }
+        public string Description { get; set; }
+        public string ReleaseDate { get; set; }
+        public int RunTime { get; set; }
+        public string Language { get; set; }
+        public string Country { get; set; }
+        public string TrailerUrl { get; set; }
 
-        /*
         public int UserId { get; set; }
-        public UserEntity User { get; set; }*/
     }
 }
