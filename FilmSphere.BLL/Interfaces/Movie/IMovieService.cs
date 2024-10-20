@@ -11,8 +11,6 @@ namespace FilmSphere.BLL.Interfaces.Movie
     {
         Task<MovieDTO> AddMovieAsync(MovieDTO movie);
         Task<MovieDTO> GetMovieById(int id);
-        Task<MovieDTO> ValidateMovieAsync(MovieDTO movie);
         Task<CastDTO> AddCastToMovieAsync(CastDTO cast);
-        Task<CastDTO> ValidateCastAsync(CastDTO cast);
     }
 }

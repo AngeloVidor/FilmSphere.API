@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "w39S6/d/tdJgXxcwIPTSRYmkL1diGomHATTEFV+2CgGk90dzJPOMY/qzCkq7qt9lB1vZmHMogCGrLvuz9d5vAQ==",
+  "dgSpecHash": "zyXTR8HIaUB8LIE4XFUZ6uYoem0sUwku/rd+VpEw9tvOKmcwtuNelFvgabpCv81j53yHXla0jCQhJ//4X+4qDw==",
   "success": true,
   "projectFilePath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.BLL\\FilmSphere.BLL.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.5\\microsoft.data.sqlclient.5.1.5.nupkg.sha512",

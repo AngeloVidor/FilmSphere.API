@@ -8,6 +8,7 @@ using FilmSphere.BLL.DTOs.Movie.Cast;
 using FilmSphere.BLL.Interfaces.Movie;
 using FilmSphere.Core.Entities.Movie;
 using FilmSphere.DAL.Interfaces.Movie;
+using FluentValidation;
 
 namespace FilmSphere.BLL.Services.Movie
 {
@@ -15,16 +16,32 @@ namespace FilmSphere.BLL.Services.Movie
     {
         private readonly IMovieRepository _movieRepository;
         private readonly IMapper _mapper;
+        private readonly IValidator<MovieDTO> _movieValidator;
+        private readonly IValidator<CastDTO> _castValidator;
 
-        public MovieService(IMovieRepository movieRepository, IMapper mapper)
+        public MovieService(
+            IMovieRepository movieRepository,
+            IMapper mapper,
+            IValidator<MovieDTO> movieValidator,
+            IValidator<CastDTO> castValidator
+        )
         {
             _movieRepository = movieRepository;
             _mapper = mapper;
+            _movieValidator = movieValidator;
+            _castValidator = castValidator;
         }
 
         public async Task<CastDTO> AddCastToMovieAsync(CastDTO cast)
         {
-            await ValidateCastAsync(cast);
+            var validationResult = await _castValidator.ValidateAsync(cast);
+            if (!validationResult.IsValid)
+            {
+                var errors = validationResult.Errors.Select(failure =>
+                    $"Property {failure.PropertyName} failed validation. Error was: {failure.ErrorMessage}"
+                );
+                throw new ValidationException(string.Join("; ", errors));
+            }
 
             var movie = await _movieRepository.GetMovieById(cast.MovieId);
             if (movie == null)
@@ -45,7 +62,15 @@ namespace FilmSphere.BLL.Services.Movie
 
         public async Task<MovieDTO> AddMovieAsync(MovieDTO movie)
         {
-            await ValidateMovieAsync(movie);
+            var validationResult = await _movieValidator.ValidateAsync(movie);
+
+            if (!validationResult.IsValid)
+            {
+                var errors = validationResult.Errors.Select(failure =>
+                    $"Property {failure.PropertyName} failed validation. Error was: {failure.ErrorMessage}"
+                );
+                throw new ValidationException(string.Join("; ", errors));
+            }
 
             if (movie.UserId <= 0)
             {
@@ -71,102 +96,6 @@ namespace FilmSphere.BLL.Services.Movie
                 return null;
             }
             return _mapper.Map<MovieDTO>(movieEntity);
-        }
-
-        public async Task<MovieDTO> ValidateMovieAsync(MovieDTO movieDto)
-        {
-            if (movieDto.MovieId < 0)
-            {
-                throw new ArgumentException("Movie ID cannot be negative.");
-            }
-            if (string.IsNullOrWhiteSpace(movieDto.OriginalTitle))
-            {
-                throw new ArgumentException("Original Title cannot be null or empty.");
-            }
-            if (string.IsNullOrWhiteSpace(movieDto.Description))
-            {
-                throw new ArgumentException("Description cannot be null or empty.");
-            }
-            if (!DateTime.TryParse(movieDto.ReleaseDate, out DateTime releaseDate))
-            {
-                throw new ArgumentException("The release date is not in a valid format.");
-            }
-
-            if (releaseDate > DateTime.Now)
-            {
-                throw new ArgumentException("The release date cannot be in the future");
-            }
-            if (string.IsNullOrWhiteSpace(movieDto.Language))
-            {
-                throw new ArgumentException("Language cannot be empty");
-            }
-            if (string.IsNullOrWhiteSpace(movieDto.TrailerUrl))
-            {
-                throw new ArgumentException("Trailer url cannot be empty");
-            }
-            if (string.IsNullOrWhiteSpace(movieDto.Country))
-            {
-                throw new ArgumentException("Country cannot be empty");
-            }
-            if (movieDto.RunTime <= 0)
-            {
-                throw new ArgumentException("Runtine must be greater than 0");
-            }
-            if (movieDto.RunTime > 600)
-            {
-                throw new ArgumentException("RunTime cannot exceed 600 minutes (10 hours).");
-            }
-            return movieDto;
-        }
-
-        public async Task<CastDTO> ValidateCastAsync(CastDTO cast)
-        {
-            if (
-                string.IsNullOrWhiteSpace(cast.ActorName1)
-                || string.IsNullOrWhiteSpace(cast.CharacterName1)
-            )
-            {
-                throw new ArgumentException(
-                    "Actor name and Character name cannot be empty or white space"
-                );
-            }
-            if (
-                string.IsNullOrWhiteSpace(cast.ActorName2)
-                || string.IsNullOrWhiteSpace(cast.CharacterName2)
-            )
-            {
-                throw new ArgumentException(
-                    "Actor name and Character name cannot be empty or white space"
-                );
-            }
-            if (
-                string.IsNullOrWhiteSpace(cast.ActorName3)
-                || string.IsNullOrWhiteSpace(cast.CharacterName3)
-            )
-            {
-                throw new ArgumentException(
-                    "Actor name and Character name cannot be empty or white space"
-                );
-            }
-            if (
-                string.IsNullOrWhiteSpace(cast.ActorName4)
-                || string.IsNullOrWhiteSpace(cast.CharacterName4)
-            )
-            {
-                throw new ArgumentException(
-                    "Actor name and Character name cannot be empty or white space"
-                );
-            }
-            if (
-                string.IsNullOrWhiteSpace(cast.ActorName5)
-                || string.IsNullOrWhiteSpace(cast.CharacterName5)
-            )
-            {
-                throw new ArgumentException(
-                    "Actor name and Character name cannot be empty or white space"
-                );
-            }
-            return cast;
         }
     }
 }

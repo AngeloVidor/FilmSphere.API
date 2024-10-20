@@ -1,4 +1,8 @@
 using System.Text;
+using FilmSphere.BLL.DTOs.Movie;
+using FilmSphere.BLL.DTOs.Movie.Cast;
+using FilmSphere.BLL.DTOs.Movie.Cast.Validator;
+using FilmSphere.BLL.DTOs.Movie.Cast.Validator.Movie;
 using FilmSphere.BLL.Interfaces.Movie;
 using FilmSphere.BLL.Interfaces.User;
 using FilmSphere.BLL.Interfaces.User.Auth;
@@ -11,6 +15,7 @@ using FilmSphere.DAL.Interfaces.Movie;
 using FilmSphere.DAL.Interfaces.User;
 using FilmSphere.DAL.Repositories.Movie;
 using FilmSphere.DAL.Repositories.User;
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
@@ -32,6 +37,11 @@ builder.Services.AddAutoMapper(typeof(MappingProfile));
 builder.Services.AddScoped<IAuthService, AuthService>();
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IMovieRepository, MovieRepository>();
+
+//Validator
+builder.Services.AddScoped<IValidator<CastDTO>, CastValidator>();
+builder.Services.AddTransient<IValidator<MovieDTO>, MovieValidator>();
+
 
 var jwtSettings = builder.Configuration.GetSection("Jwt");
 builder

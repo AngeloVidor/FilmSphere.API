@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "mUinmZWgzAjBHQpZv3DRLMwa7oC1t2AJH4i+veHhCyUi5wfEGrxwQ7rJLtB22DkMpvUp6xDGO4AnjIuPDg4PFw==",
+  "dgSpecHash": "OwZsilKUsX1kzw8yZ1ru9DYoKNP4HqYd8nQmW2WnmAh0+s2vrf5NfE3XXl7p0zxk2nlKIQ26S+OCAvvIZr5IvQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSPhere.API\\FilmSphere.API.csproj",
+  "projectFilePath": "C:\\Users\\angel\\Desktop\\FilmSphere.API\\FilmSphere.API\\FilmSphere.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\angel\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\angel\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.10\\microsoft.aspnetcore.authentication.jwtbearer.8.0.10.nupkg.sha512",
     "C:\\Users\\angel\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.1\\microsoft.aspnetcore.openapi.8.0.1.nupkg.sha512",
