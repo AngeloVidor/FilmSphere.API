@@ -24,6 +24,8 @@ namespace FilmSphere.BLL.Services.Movie
 
         public async Task<CastDTO> AddCastToMovieAsync(CastDTO cast)
         {
+            await ValidateCastAsync(cast);
+
             var movie = await _movieRepository.GetMovieById(cast.MovieId);
             if (movie == null)
             {
@@ -115,6 +117,56 @@ namespace FilmSphere.BLL.Services.Movie
                 throw new ArgumentException("RunTime cannot exceed 600 minutes (10 hours).");
             }
             return movieDto;
+        }
+
+        public async Task<CastDTO> ValidateCastAsync(CastDTO cast)
+        {
+            if (
+                string.IsNullOrWhiteSpace(cast.ActorName1)
+                || string.IsNullOrWhiteSpace(cast.CharacterName1)
+            )
+            {
+                throw new ArgumentException(
+                    "Actor name and Character name cannot be empty or white space"
+                );
+            }
+            if (
+                string.IsNullOrWhiteSpace(cast.ActorName2)
+                || string.IsNullOrWhiteSpace(cast.CharacterName2)
+            )
+            {
+                throw new ArgumentException(
+                    "Actor name and Character name cannot be empty or white space"
+                );
+            }
+            if (
+                string.IsNullOrWhiteSpace(cast.ActorName3)
+                || string.IsNullOrWhiteSpace(cast.CharacterName3)
+            )
+            {
+                throw new ArgumentException(
+                    "Actor name and Character name cannot be empty or white space"
+                );
+            }
+            if (
+                string.IsNullOrWhiteSpace(cast.ActorName4)
+                || string.IsNullOrWhiteSpace(cast.CharacterName4)
+            )
+            {
+                throw new ArgumentException(
+                    "Actor name and Character name cannot be empty or white space"
+                );
+            }
+            if (
+                string.IsNullOrWhiteSpace(cast.ActorName5)
+                || string.IsNullOrWhiteSpace(cast.CharacterName5)
+            )
+            {
+                throw new ArgumentException(
+                    "Actor name and Character name cannot be empty or white space"
+                );
+            }
+            return cast;
         }
     }
 }

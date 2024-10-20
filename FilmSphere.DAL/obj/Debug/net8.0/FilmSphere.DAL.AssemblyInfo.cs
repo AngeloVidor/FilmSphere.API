@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FilmSphere.DAL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1018b34c36e9d0dce60ea29d83aa8d1b093b2bd")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3c4b58895899bd83196ab395ec464677963ddc88")]
 [assembly: System.Reflection.AssemblyProductAttribute("FilmSphere.DAL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FilmSphere.DAL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
