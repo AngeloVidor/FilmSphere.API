@@ -17,7 +17,7 @@ namespace FilmSphere.BLL.DTOs.Movie
         public string Country { get; set; }
         public string TrailerUrl { get; set; }
         
-        public ICollection<CastDTO> Cast { get; set; }
+        //public ICollection<CastDTO> Cast { get; set; }
 
         public int UserId { get; set; }
     }
